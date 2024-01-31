@@ -3,10 +3,10 @@ package com.adasoft.ftps.parameter.mulpropshide0100;
 import com.datasweep.compatibility.client.ATRow;
 
 public class MESRtParamMulPropsHide extends MESParamMulPropsHide {
-    protected static final String ATDEFINITION_NAME = "L_RtParMulPropsHide0100";
+    protected static final String ATDEFINITION_NAME = "AD_RtParMulPropsHide0100";
 
     public String getATDefinitionName() {
-        return "L_RtParMulPropsHide0100";
+        return "AD_RtParMulPropsHide0100";
     }
 
     public MESRtParamMulPropsHide(long key) {

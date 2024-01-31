@@ -3,10 +3,10 @@ package com.adasoft.ftps.parameter.duratpropdef0100;
 import com.datasweep.compatibility.client.ATRow;
 
 public class MESRtParamDuratPropDef extends MESParamDuratPropDef {
-    protected static final String ATDEFINITION_NAME = "L_RtParDuratPropDef0100";
+    protected static final String ATDEFINITION_NAME = "AD_RtParDuratPropDef0100";
 
     public String getATDefinitionName() {
-        return "L_RtParDuratPropDef0100";
+        return "AD_RtParDuratPropDef0100";
     }
 
     public MESRtParamDuratPropDef(long key) {

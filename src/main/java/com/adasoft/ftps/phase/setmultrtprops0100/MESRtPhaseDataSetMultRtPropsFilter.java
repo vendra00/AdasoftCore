@@ -17,10 +17,10 @@ import java.util.List;
 
 public class MESRtPhaseDataSetMultRtPropsFilter extends ATRowFilter implements IMESRtPhaseDataFilter {
     private static final long serialVersionUID = 1L;
-    protected static final String ATDEFINITION_NAME = "L_PhDatSetMultRtProps0100";
+    protected static final String ATDEFINITION_NAME = "AD_PhDatSetMultRtProps0100";
 
     public MESRtPhaseDataSetMultRtPropsFilter(Server server) {
-        super(server, "L_PhDatSetMultRtProps0100");
+        super(server, "AD_PhDatSetMultRtProps0100");
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter() {
@@ -42,27 +42,27 @@ public class MESRtPhaseDataSetMultRtPropsFilter extends ATRowFilter implements I
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forBooleanValueEqualTo(Boolean value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("L_BooleanValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_BooleanValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forBooleanValueNotEqualTo(Boolean value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_BooleanValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_BooleanValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forBundleIdEqualTo(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("L_BundleId", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_BundleId", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forBundleIdNotEqualTo(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_BundleId", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_BundleId", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forBundleIdContaining(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameContaining("L_BundleId", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameContaining("AD_BundleId", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forBundleIdStartingWith(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameStartingWith("L_BundleId", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameStartingWith("AD_BundleId", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forCreationSeqIndexEqualTo(Long value) throws DatasweepException {
@@ -82,124 +82,124 @@ public class MESRtPhaseDataSetMultRtPropsFilter extends ATRowFilter implements I
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDateTimeFormatEqualTo(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("L_DateTimeFormat", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_DateTimeFormat", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDateTimeFormatNotEqualTo(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_DateTimeFormat", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_DateTimeFormat", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDateTimeFormatContaining(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameContaining("L_DateTimeFormat", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameContaining("AD_DateTimeFormat", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDateTimeFormatStartingWith(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameStartingWith("L_DateTimeFormat", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameStartingWith("AD_DateTimeFormat", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDateTimeValueEqualTo(Time value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("L_DateTimeValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_DateTimeValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDateTimeValueNotEqualTo(Time value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_DateTimeValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_DateTimeValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDateTimeValueGreaterThanOrEqualTo(Time value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameGreaterThanOrEqualTo("L_DateTimeValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameGreaterThanOrEqualTo("AD_DateTimeValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDateTimeValueLessThan(Time value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameLessThan("L_DateTimeValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameLessThan("AD_DateTimeValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDecimalValueEqualTo(BigDecimal value) throws DatasweepException {
         MeasuredValue mv = value == null ? null : MeasuredValueUtilities.createMV(value, "");
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("L_DecimalValue", mv);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_DecimalValue", mv);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDecimalValueNotEqualTo(BigDecimal value) throws DatasweepException {
         MeasuredValue mv = value == null ? null : MeasuredValueUtilities.createMV(value, "");
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_DecimalValue", mv);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_DecimalValue", mv);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDurationValueEqualTo(MESDuration value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("L_DurationValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_DurationValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forDurationValueNotEqualTo(MESDuration value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_DurationValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_DurationValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forEquipEntityIdEqualTo(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("L_EquipEntityId", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_EquipEntityId", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forEquipEntityIdNotEqualTo(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_EquipEntityId", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_EquipEntityId", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forEquipEntityIdContaining(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameContaining("L_EquipEntityId", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameContaining("AD_EquipEntityId", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forEquipEntityIdStartingWith(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameStartingWith("L_EquipEntityId", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameStartingWith("AD_EquipEntityId", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forLongValueEqualTo(Long value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("L_LongValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_LongValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forLongValueNotEqualTo(Long value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_LongValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_LongValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forLongValueGreaterThanOrEqualTo(Long value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameGreaterThanOrEqualTo("L_LongValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameGreaterThanOrEqualTo("AD_LongValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forLongValueLessThan(Long value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameLessThan("L_LongValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameLessThan("AD_LongValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forMeasuredValueValueEqualTo(IMeasuredValue value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("L_MeasuredValueValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_MeasuredValueValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forMeasuredValueValueNotEqualTo(IMeasuredValue value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_MeasuredValueValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_MeasuredValueValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forPropertyEqualTo(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("L_Property", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_Property", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forPropertyNotEqualTo(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_Property", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_Property", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forPropertyContaining(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameContaining("L_Property", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameContaining("AD_Property", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forPropertyStartingWith(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameStartingWith("L_Property", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameStartingWith("AD_Property", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forStringValueEqualTo(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("L_StringValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_StringValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forStringValueNotEqualTo(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_StringValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_StringValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forStringValueContaining(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameContaining("L_StringValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameContaining("AD_StringValue", value);
     }
 
     public MESRtPhaseDataSetMultRtPropsFilter forStringValueStartingWith(String value) throws DatasweepException {
-        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameStartingWith("L_StringValue", value);
+        return (MESRtPhaseDataSetMultRtPropsFilter)this.forColumnNameStartingWith("AD_StringValue", value);
     }
 }

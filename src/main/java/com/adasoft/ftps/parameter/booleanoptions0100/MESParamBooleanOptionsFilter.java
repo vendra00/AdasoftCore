@@ -9,10 +9,10 @@ import java.util.List;
 
 public class MESParamBooleanOptionsFilter extends ATRowFilter {
     private static final long serialVersionUID = 1L;
-    protected static final String ATDEFINITION_NAME = "L_ParamBooleanOptions0100";
+    protected static final String ATDEFINITION_NAME = "AD_ParamBooleanOptions0100";
 
     public MESParamBooleanOptionsFilter(Server server) {
-        super(server, "L_ParamBooleanOptions0100");
+        super(server, "AD_ParamBooleanOptions0100");
     }
 
     public MESParamBooleanOptionsFilter() {
@@ -24,34 +24,34 @@ public class MESParamBooleanOptionsFilter extends ATRowFilter {
     }
 
     public MESParamBooleanOptionsFilter forDisplayTextForFalseEqualTo(String value) throws DatasweepException {
-        return (MESParamBooleanOptionsFilter)this.forColumnNameEqualTo("L_DisplayTextForFalse", value);
+        return (MESParamBooleanOptionsFilter)this.forColumnNameEqualTo("AD_DisplayTextForFalse", value);
     }
 
     public MESParamBooleanOptionsFilter forDisplayTextForFalseNotEqualTo(String value) throws DatasweepException {
-        return (MESParamBooleanOptionsFilter)this.forColumnNameNotEqualTo("L_DisplayTextForFalse", value);
+        return (MESParamBooleanOptionsFilter)this.forColumnNameNotEqualTo("AD_DisplayTextForFalse", value);
     }
 
     public MESParamBooleanOptionsFilter forDisplayTextForFalseContaining(String value) throws DatasweepException {
-        return (MESParamBooleanOptionsFilter)this.forColumnNameContaining("L_DisplayTextForFalse", value);
+        return (MESParamBooleanOptionsFilter)this.forColumnNameContaining("AD_DisplayTextForFalse", value);
     }
 
     public MESParamBooleanOptionsFilter forDisplayTextForFalseStartingWith(String value) throws DatasweepException {
-        return (MESParamBooleanOptionsFilter)this.forColumnNameStartingWith("L_DisplayTextForFalse", value);
+        return (MESParamBooleanOptionsFilter)this.forColumnNameStartingWith("AD_DisplayTextForFalse", value);
     }
 
     public MESParamBooleanOptionsFilter forDisplayTextForTrueEqualTo(String value) throws DatasweepException {
-        return (MESParamBooleanOptionsFilter)this.forColumnNameEqualTo("L_DisplayTextForTrue", value);
+        return (MESParamBooleanOptionsFilter)this.forColumnNameEqualTo("AD_DisplayTextForTrue", value);
     }
 
     public MESParamBooleanOptionsFilter forDisplayTextForTrueNotEqualTo(String value) throws DatasweepException {
-        return (MESParamBooleanOptionsFilter)this.forColumnNameNotEqualTo("L_DisplayTextForTrue", value);
+        return (MESParamBooleanOptionsFilter)this.forColumnNameNotEqualTo("AD_DisplayTextForTrue", value);
     }
 
     public MESParamBooleanOptionsFilter forDisplayTextForTrueContaining(String value) throws DatasweepException {
-        return (MESParamBooleanOptionsFilter)this.forColumnNameContaining("L_DisplayTextForTrue", value);
+        return (MESParamBooleanOptionsFilter)this.forColumnNameContaining("AD_DisplayTextForTrue", value);
     }
 
     public MESParamBooleanOptionsFilter forDisplayTextForTrueStartingWith(String value) throws DatasweepException {
-        return (MESParamBooleanOptionsFilter)this.forColumnNameStartingWith("L_DisplayTextForTrue", value);
+        return (MESParamBooleanOptionsFilter)this.forColumnNameStartingWith("AD_DisplayTextForTrue", value);
     }
 }

@@ -12,14 +12,14 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class MESParamBooleanOptions extends BulkSaveableMESATObject implements IMESProcessParameterData {
     protected static final String ATDEFINITION_NAME = "L_ParamBooleanOptions0100";
     public static final String PROP_NAME_DISPLAYTEXTFORFALSE = "displayTextForFalse";
-    public static final String DB_COL_NAME_DISPLAYTEXTFORFALSE = "L_DisplayTextForFalse_S";
-    public static final String COL_NAME_DISPLAYTEXTFORFALSE = "L_DisplayTextForFalse";
+    public static final String DB_COL_NAME_DISPLAYTEXTFORFALSE = "AD_DisplayTextForFalse_S";
+    public static final String COL_NAME_DISPLAYTEXTFORFALSE = "AD_DisplayTextForFalse";
     public static final String PROP_NAME_DISPLAYTEXTFORTRUE = "displayTextForTrue";
-    public static final String DB_COL_NAME_DISPLAYTEXTFORTRUE = "L_DisplayTextForTrue_S";
-    public static final String COL_NAME_DISPLAYTEXTFORTRUE = "L_DisplayTextForTrue";
+    public static final String DB_COL_NAME_DISPLAYTEXTFORTRUE = "AD_DisplayTextForTrue_S";
+    public static final String COL_NAME_DISPLAYTEXTFORTRUE = "AD_DisplayTextForTrue";
 
     public String getATDefinitionName() {
-        return "L_ParamBooleanOptions0100";
+        return "AD_ParamBooleanOptions0100";
     }
 
     public MESParamBooleanOptions(long key) {
@@ -42,22 +42,22 @@ public class MESParamBooleanOptions extends BulkSaveableMESATObject implements I
     }
 
     public String getDisplayTextForFalse() {
-        return (String)this.dgtATRow.getValue("L_DisplayTextForFalse");
+        return (String)this.dgtATRow.getValue("AD_DisplayTextForFalse");
     }
 
     public void setDisplayTextForFalse(String value) {
         String oldValue = this.getDisplayTextForFalse();
-        this.dgtATRow.setValue("L_DisplayTextForFalse", value);
+        this.dgtATRow.setValue("AD_DisplayTextForFalse", value);
         this.pcs.firePropertyChange("displayTextForFalse", oldValue, value);
     }
 
     public String getDisplayTextForTrue() {
-        return (String)this.dgtATRow.getValue("L_DisplayTextForTrue");
+        return (String)this.dgtATRow.getValue("AD_DisplayTextForTrue");
     }
 
     public void setDisplayTextForTrue(String value) {
         String oldValue = this.getDisplayTextForTrue();
-        this.dgtATRow.setValue("L_DisplayTextForTrue", value);
+        this.dgtATRow.setValue("AD_DisplayTextForTrue", value);
         this.pcs.firePropertyChange("displayTextForTrue", oldValue, value);
     }
 

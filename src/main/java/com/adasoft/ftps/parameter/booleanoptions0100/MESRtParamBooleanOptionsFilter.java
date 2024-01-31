@@ -4,7 +4,7 @@ import com.datasweep.compatibility.client.Server;
 
 public class MESRtParamBooleanOptionsFilter extends MESParamBooleanOptionsFilter {
     private static final long serialVersionUID = 1L;
-    protected static final String ATDEFINITION_NAME = "L_RtParBooleanOptions0100";
+    protected static final String ATDEFINITION_NAME = "AD_RtParBooleanOptions0100";
 
     public MESRtParamBooleanOptionsFilter(Server server) {
         super(server);

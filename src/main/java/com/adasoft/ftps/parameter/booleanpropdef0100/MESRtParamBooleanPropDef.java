@@ -3,10 +3,10 @@ package com.adasoft.ftps.parameter.booleanpropdef0100;
 import com.datasweep.compatibility.client.ATRow;
 
 public class MESRtParamBooleanPropDef extends MESParamBooleanPropDef {
-    protected static final String ATDEFINITION_NAME = "L_RtParBooleanPropDef0100";
+    protected static final String ATDEFINITION_NAME = "AD_RtParBooleanPropDef0100";
 
     public String getATDefinitionName() {
-        return "L_RtParBooleanPropDef0100";
+        return "AD_RtParBooleanPropDef0100";
     }
 
     public MESRtParamBooleanPropDef(long key) {

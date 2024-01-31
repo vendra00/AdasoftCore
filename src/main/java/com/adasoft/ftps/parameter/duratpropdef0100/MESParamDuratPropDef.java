@@ -11,25 +11,25 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class MESParamDuratPropDef extends BulkSaveableMESATObject implements IMESProcessParameterData {
-    protected static final String ATDEFINITION_NAME = "L_ParamDuratPropDef0100";
+    protected static final String ATDEFINITION_NAME = "AD_ParamDuratPropDef0100";
     public static final String PROP_NAME_DEFAULTVALUE = "defaultValue";
-    public static final String DB_COL_NAME_DEFAULTVALUE = "L_DefaultValue_I";
-    public static final String COL_NAME_DEFAULTVALUE = "L_DefaultValue";
+    public static final String DB_COAD_NAME_DEFAULTVALUE = "AD_DefaultValue_I";
+    public static final String COAD_NAME_DEFAULTVALUE = "AD_DefaultValue";
     public static final String PROP_NAME_LOWERLIMIT = "lowerLimit";
-    public static final String DB_COL_NAME_LOWERLIMIT = "L_LowerLimit_I";
-    public static final String COL_NAME_LOWERLIMIT = "L_LowerLimit";
+    public static final String DB_COAD_NAME_LOWERLIMIT = "AD_LowerLimit_I";
+    public static final String COAD_NAME_LOWERLIMIT = "AD_LowerLimit";
     public static final String PROP_NAME_PROPERTY = "property";
-    public static final String DB_COL_NAME_PROPERTY = "L_property_S";
-    public static final String COL_NAME_PROPERTY = "L_property";
+    public static final String DB_COAD_NAME_PROPERTY = "AD_property_S";
+    public static final String COAD_NAME_PROPERTY = "AD_property";
     public static final String PROP_NAME_UPPERLIMIT = "upperLimit";
-    public static final String DB_COL_NAME_UPPERLIMIT = "L_UpperLimit_I";
-    public static final String COL_NAME_UPPERLIMIT = "L_UpperLimit";
+    public static final String DB_COAD_NAME_UPPERLIMIT = "AD_UpperLimit_I";
+    public static final String COAD_NAME_UPPERLIMIT = "AD_UpperLimit";
     public static final String PROP_NAME_VALUEEDITABLE = "valueEditable";
-    public static final String DB_COL_NAME_VALUEEDITABLE = "L_ValueEditable_Y";
-    public static final String COL_NAME_VALUEEDITABLE = "L_ValueEditable";
+    public static final String DB_COAD_NAME_VALUEEDITABLE = "AD_ValueEditable_Y";
+    public static final String COAD_NAME_VALUEEDITABLE = "AD_ValueEditable";
 
     public String getATDefinitionName() {
-        return "L_ParamDuratPropDef0100";
+        return "AD_ParamDuratPropDef0100";
     }
 
     public MESParamDuratPropDef(long key) {
@@ -52,55 +52,55 @@ public class MESParamDuratPropDef extends BulkSaveableMESATObject implements IME
     }
 
     public MESDuration getDefaultValue() {
-        Object value = this.dgtATRow.getValue("L_DefaultValue");
+        Object value = this.dgtATRow.getValue("AD_DefaultValue");
         return value != null ? MESDuration.fromLong((Long)value) : null;
     }
 
     public void setDefaultValue(MESDuration value) {
         MESDuration oldValue = this.getDefaultValue();
-        this.dgtATRow.setValue("L_DefaultValue", value != null ? MESDuration.toLong(value) : null);
+        this.dgtATRow.setValue("AD_DefaultValue", value != null ? MESDuration.toLong(value) : null);
         this.pcs.firePropertyChange("defaultValue", oldValue, value);
     }
 
     public MESDuration getLowerLimit() {
-        Object value = this.dgtATRow.getValue("L_LowerLimit");
+        Object value = this.dgtATRow.getValue("AD_LowerLimit");
         return value != null ? MESDuration.fromLong((Long)value) : null;
     }
 
     public void setLowerLimit(MESDuration value) {
         MESDuration oldValue = this.getLowerLimit();
-        this.dgtATRow.setValue("L_LowerLimit", value != null ? MESDuration.toLong(value) : null);
+        this.dgtATRow.setValue("AD_LowerLimit", value != null ? MESDuration.toLong(value) : null);
         this.pcs.firePropertyChange("lowerLimit", oldValue, value);
     }
 
     public String getProperty() {
-        return (String)this.dgtATRow.getValue("L_property");
+        return (String)this.dgtATRow.getValue("AD_property");
     }
 
     public void setProperty(String value) {
         String oldValue = this.getProperty();
-        this.dgtATRow.setValue("L_property", value);
+        this.dgtATRow.setValue("AD_property", value);
         this.pcs.firePropertyChange("property", oldValue, value);
     }
 
     public MESDuration getUpperLimit() {
-        Object value = this.dgtATRow.getValue("L_UpperLimit");
+        Object value = this.dgtATRow.getValue("AD_UpperLimit");
         return value != null ? MESDuration.fromLong((Long)value) : null;
     }
 
     public void setUpperLimit(MESDuration value) {
         MESDuration oldValue = this.getUpperLimit();
-        this.dgtATRow.setValue("L_UpperLimit", value != null ? MESDuration.toLong(value) : null);
+        this.dgtATRow.setValue("AD_UpperLimit", value != null ? MESDuration.toLong(value) : null);
         this.pcs.firePropertyChange("upperLimit", oldValue, value);
     }
 
     public Boolean getValueEditable() {
-        return (Boolean)this.dgtATRow.getValue("L_ValueEditable");
+        return (Boolean)this.dgtATRow.getValue("AD_ValueEditable");
     }
 
     public void setValueEditable(Boolean value) {
         Boolean oldValue = this.getValueEditable();
-        this.dgtATRow.setValue("L_ValueEditable", value);
+        this.dgtATRow.setValue("AD_ValueEditable", value);
         this.pcs.firePropertyChange("valueEditable", oldValue, value);
     }
 

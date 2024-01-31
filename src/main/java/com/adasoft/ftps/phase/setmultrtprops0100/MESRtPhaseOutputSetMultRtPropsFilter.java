@@ -12,10 +12,10 @@ import java.util.List;
 
 public class MESRtPhaseOutputSetMultRtPropsFilter extends ATRowFilter implements IMESRtPhaseOutputFilter {
     private static final long serialVersionUID = 1L;
-    protected static final String ATDEFINITION_NAME = "L_PhOutSetMultRtProps0100";
+    protected static final String ATDEFINITION_NAME = "AD_PhOutSetMultRtProps0100";
 
     public MESRtPhaseOutputSetMultRtPropsFilter(Server server) {
-        super(server, "L_PhOutSetMultRtProps0100");
+        super(server, "AD_PhOutSetMultRtProps0100");
     }
 
     public MESRtPhaseOutputSetMultRtPropsFilter() {
@@ -37,26 +37,26 @@ public class MESRtPhaseOutputSetMultRtPropsFilter extends ATRowFilter implements
     }
 
     public MESRtPhaseOutputSetMultRtPropsFilter forEquipmentEntityEqualTo(IMESS88Equipment value) throws DatasweepException {
-        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameEqualTo("L_EquipmentEntity", value);
+        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_EquipmentEntity", value);
     }
 
     public MESRtPhaseOutputSetMultRtPropsFilter forEquipmentEntityNotEqualTo(IMESS88Equipment value) throws DatasweepException {
-        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_EquipmentEntity", value);
+        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_EquipmentEntity", value);
     }
 
     public MESRtPhaseOutputSetMultRtPropsFilter forExceptionRecordedEqualTo(Boolean value) throws DatasweepException {
-        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameEqualTo("L_ExceptionRecorded", value);
+        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_ExceptionRecorded", value);
     }
 
     public MESRtPhaseOutputSetMultRtPropsFilter forExceptionRecordedNotEqualTo(Boolean value) throws DatasweepException {
-        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_ExceptionRecorded", value);
+        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_ExceptionRecorded", value);
     }
 
     public MESRtPhaseOutputSetMultRtPropsFilter forValuesEqualTo(byte[] value) throws DatasweepException {
-        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameEqualTo("L_Values", value);
+        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameEqualTo("AD_Values", value);
     }
 
     public MESRtPhaseOutputSetMultRtPropsFilter forValuesNotEqualTo(byte[] value) throws DatasweepException {
-        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameNotEqualTo("L_Values", value);
+        return (MESRtPhaseOutputSetMultRtPropsFilter)this.forColumnNameNotEqualTo("AD_Values", value);
     }
 }

@@ -10,16 +10,16 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class MESParamMastBundlIdent extends BulkSaveableMESATObject implements IMESProcessParameterData {
-    protected static final String ATDEFINITION_NAME = "L_ParamMastBundlIdent0100";
+    protected static final String ATDEFINITION_NAME = "AD_ParamMastBundlIdent0100";
     public static final String PROP_NAME_DESCRIPTION = "description";
-    public static final String DB_COL_NAME_DESCRIPTION = "L_description_S";
-    public static final String COL_NAME_DESCRIPTION = "L_description";
+    public static final String DB_COAD_NAME_DESCRIPTION = "AD_description_S";
+    public static final String COAD_NAME_DESCRIPTION = "AD_description";
     public static final String PROP_NAME_SHORTDESCRIPTION = "shortDescription";
-    public static final String DB_COL_NAME_SHORTDESCRIPTION = "L_ShortDescription_S";
-    public static final String COL_NAME_SHORTDESCRIPTION = "L_ShortDescription";
+    public static final String DB_COAD_NAME_SHORTDESCRIPTION = "AD_ShortDescription_S";
+    public static final String COAD_NAME_SHORTDESCRIPTION = "AD_ShortDescription";
 
     public String getATDefinitionName() {
-        return "L_ParamMastBundlIdent0100";
+        return "AD_ParamMastBundlIdent0100";
     }
 
     public MESParamMastBundlIdent(long key) {
@@ -42,22 +42,22 @@ public class MESParamMastBundlIdent extends BulkSaveableMESATObject implements I
     }
 
     public String getDescription() {
-        return (String)this.dgtATRow.getValue("L_description");
+        return (String)this.dgtATRow.getValue("AD_description");
     }
 
     public void setDescription(String value) {
         String oldValue = this.getDescription();
-        this.dgtATRow.setValue("L_description", value);
+        this.dgtATRow.setValue("AD_description", value);
         this.pcs.firePropertyChange("description", oldValue, value);
     }
 
     public String getShortDescription() {
-        return (String)this.dgtATRow.getValue("L_ShortDescription");
+        return (String)this.dgtATRow.getValue("AD_ShortDescription");
     }
 
     public void setShortDescription(String value) {
         String oldValue = this.getShortDescription();
-        this.dgtATRow.setValue("L_ShortDescription", value);
+        this.dgtATRow.setValue("AD_ShortDescription", value);
         this.pcs.firePropertyChange("shortDescription", oldValue, value);
     }
 

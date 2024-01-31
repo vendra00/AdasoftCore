@@ -10,22 +10,22 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class MESParamBooleanPropDef extends BulkSaveableMESATObject implements IMESProcessParameterData {
-    protected static final String ATDEFINITION_NAME = "L_ParamBooleanPropDef0100";
+    protected static final String ATDEFINITION_NAME = "AD_ParamBooleanPropDef0100";
     public static final String PROP_NAME_DEFAULTVALUE = "defaultValue";
-    public static final String DB_COL_NAME_DEFAULTVALUE = "L_DefaultValue_I";
-    public static final String COL_NAME_DEFAULTVALUE = "L_DefaultValue";
+    public static final String DB_COAD_NAME_DEFAULTVALUE = "AD_DefaultValue_I";
+    public static final String COAD_NAME_DEFAULTVALUE = "AD_DefaultValue";
     public static final String PROP_NAME_EXPECTEDVALUE = "expectedValue";
-    public static final String DB_COL_NAME_EXPECTEDVALUE = "L_ExpectedValue_I";
-    public static final String COL_NAME_EXPECTEDVALUE = "L_ExpectedValue";
+    public static final String DB_COAD_NAME_EXPECTEDVALUE = "AD_ExpectedValue_I";
+    public static final String COAD_NAME_EXPECTEDVALUE = "AD_ExpectedValue";
     public static final String PROP_NAME_PROPERTY = "property";
-    public static final String DB_COL_NAME_PROPERTY = "L_Property_S";
-    public static final String COL_NAME_PROPERTY = "L_Property";
+    public static final String DB_COAD_NAME_PROPERTY = "AD_Property_S";
+    public static final String COAD_NAME_PROPERTY = "AD_Property";
     public static final String PROP_NAME_VALUEEDITABLE = "valueEditable";
-    public static final String DB_COL_NAME_VALUEEDITABLE = "L_ValueEditable_Y";
-    public static final String COL_NAME_VALUEEDITABLE = "L_ValueEditable";
+    public static final String DB_COAD_NAME_VALUEEDITABLE = "AD_ValueEditable_Y";
+    public static final String COAD_NAME_VALUEEDITABLE = "AD_ValueEditable";
 
     public String getATDefinitionName() {
-        return "L_ParamBooleanPropDef0100";
+        return "AD_ParamBooleanPropDef0100";
     }
 
     public MESParamBooleanPropDef(long key) {
@@ -48,42 +48,42 @@ public class MESParamBooleanPropDef extends BulkSaveableMESATObject implements I
     }
 
     public Long getDefaultValue() {
-        return (Long)this.dgtATRow.getValue("L_DefaultValue");
+        return (Long)this.dgtATRow.getValue("AD_DefaultValue");
     }
 
     public void setDefaultValue(Long value) {
         Long oldValue = this.getDefaultValue();
-        this.dgtATRow.setValue("L_DefaultValue", value);
+        this.dgtATRow.setValue("AD_DefaultValue", value);
         this.pcs.firePropertyChange("defaultValue", oldValue, value);
     }
 
     public Long getExpectedValue() {
-        return (Long)this.dgtATRow.getValue("L_ExpectedValue");
+        return (Long)this.dgtATRow.getValue("AD_ExpectedValue");
     }
 
     public void setExpectedValue(Long value) {
         Long oldValue = this.getExpectedValue();
-        this.dgtATRow.setValue("L_ExpectedValue", value);
+        this.dgtATRow.setValue("AD_ExpectedValue", value);
         this.pcs.firePropertyChange("expectedValue", oldValue, value);
     }
 
     public String getProperty() {
-        return (String)this.dgtATRow.getValue("L_Property");
+        return (String)this.dgtATRow.getValue("AD_Property");
     }
 
     public void setProperty(String value) {
         String oldValue = this.getProperty();
-        this.dgtATRow.setValue("L_Property", value);
+        this.dgtATRow.setValue("AD_Property", value);
         this.pcs.firePropertyChange("property", oldValue, value);
     }
 
     public Boolean getValueEditable() {
-        return (Boolean)this.dgtATRow.getValue("L_ValueEditable");
+        return (Boolean)this.dgtATRow.getValue("AD_ValueEditable");
     }
 
     public void setValueEditable(Boolean value) {
         Boolean oldValue = this.getValueEditable();
-        this.dgtATRow.setValue("L_ValueEditable", value);
+        this.dgtATRow.setValue("AD_ValueEditable", value);
         this.pcs.firePropertyChange("valueEditable", oldValue, value);
     }
 

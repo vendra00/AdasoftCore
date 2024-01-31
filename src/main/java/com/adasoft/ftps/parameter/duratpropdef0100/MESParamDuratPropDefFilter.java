@@ -10,10 +10,10 @@ import java.util.List;
 
 public class MESParamDuratPropDefFilter extends ATRowFilter {
     private static final long serialVersionUID = 1L;
-    protected static final String ATDEFINITION_NAME = "L_ParamDuratPropDef0100";
+    protected static final String ATDEFINITION_NAME = "AD_ParamDuratPropDef0100";
 
     public MESParamDuratPropDefFilter(Server server) {
-        super(server, "L_ParamDuratPropDef0100");
+        super(server, "AD_ParamDuratPropDef0100");
     }
 
     public MESParamDuratPropDefFilter() {
@@ -25,50 +25,50 @@ public class MESParamDuratPropDefFilter extends ATRowFilter {
     }
 
     public MESParamDuratPropDefFilter forDefaultValueEqualTo(MESDuration value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameEqualTo("L_DefaultValue", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameEqualTo("AD_DefaultValue", value);
     }
 
     public MESParamDuratPropDefFilter forDefaultValueNotEqualTo(MESDuration value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameNotEqualTo("L_DefaultValue", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameNotEqualTo("AD_DefaultValue", value);
     }
 
     public MESParamDuratPropDefFilter forLowerLimitEqualTo(MESDuration value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameEqualTo("L_LowerLimit", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameEqualTo("AD_LowerLimit", value);
     }
 
     public MESParamDuratPropDefFilter forLowerLimitNotEqualTo(MESDuration value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameNotEqualTo("L_LowerLimit", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameNotEqualTo("AD_LowerLimit", value);
     }
 
     public MESParamDuratPropDefFilter forPropertyEqualTo(String value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameEqualTo("L_property", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameEqualTo("AD_property", value);
     }
 
     public MESParamDuratPropDefFilter forPropertyNotEqualTo(String value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameNotEqualTo("L_property", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameNotEqualTo("AD_property", value);
     }
 
     public MESParamDuratPropDefFilter forPropertyContaining(String value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameContaining("L_property", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameContaining("AD_property", value);
     }
 
     public MESParamDuratPropDefFilter forPropertyStartingWith(String value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameStartingWith("L_property", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameStartingWith("AD_property", value);
     }
 
     public MESParamDuratPropDefFilter forUpperLimitEqualTo(MESDuration value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameEqualTo("L_UpperLimit", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameEqualTo("AD_UpperLimit", value);
     }
 
     public MESParamDuratPropDefFilter forUpperLimitNotEqualTo(MESDuration value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameNotEqualTo("L_UpperLimit", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameNotEqualTo("AD_UpperLimit", value);
     }
 
     public MESParamDuratPropDefFilter forValueEditableEqualTo(Boolean value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameEqualTo("L_ValueEditable", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameEqualTo("AD_ValueEditable", value);
     }
 
     public MESParamDuratPropDefFilter forValueEditableNotEqualTo(Boolean value) throws DatasweepException {
-        return (MESParamDuratPropDefFilter)this.forColumnNameNotEqualTo("L_ValueEditable", value);
+        return (MESParamDuratPropDefFilter)this.forColumnNameNotEqualTo("AD_ValueEditable", value);
     }
 }

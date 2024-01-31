@@ -3,10 +3,10 @@ package com.adasoft.ftps.parameter.stringpropdef0100;
 import com.datasweep.compatibility.client.ATRow;
 
 public class MESRtParamStringPropDef extends MESParamStringPropDef {
-    protected static final String ATDEFINITION_NAME = "L_RtParStringPropDef0100";
+    protected static final String ATDEFINITION_NAME = "AD_RtParStringPropDef0100";
 
     public String getATDefinitionName() {
-        return "L_RtParStringPropDef0100";
+        return "AD_RtParStringPropDef0100";
     }
 
     public MESRtParamStringPropDef(long key) {

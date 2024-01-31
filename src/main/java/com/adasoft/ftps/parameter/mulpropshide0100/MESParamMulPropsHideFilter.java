@@ -9,10 +9,10 @@ import java.util.List;
 
 public class MESParamMulPropsHideFilter extends ATRowFilter {
     private static final long serialVersionUID = 1L;
-    protected static final String ATDEFINITION_NAME = "L_ParamMulPropsHide0100";
+    protected static final String ATDEFINITION_NAME = "AD_ParamMulPropsHide0100";
 
     public MESParamMulPropsHideFilter(Server server) {
-        super(server, "L_ParamMulPropsHide0100");
+        super(server, "AD_ParamMulPropsHide0100");
     }
 
     public MESParamMulPropsHideFilter() {
@@ -24,10 +24,10 @@ public class MESParamMulPropsHideFilter extends ATRowFilter {
     }
 
     public MESParamMulPropsHideFilter forMakePhaseHiddenEqualTo(Boolean value) throws DatasweepException {
-        return (MESParamMulPropsHideFilter)this.forColumnNameEqualTo("L_MakePhaseHidden", value);
+        return (MESParamMulPropsHideFilter)this.forColumnNameEqualTo("AD_MakePhaseHidden", value);
     }
 
     public MESParamMulPropsHideFilter forMakePhaseHiddenNotEqualTo(Boolean value) throws DatasweepException {
-        return (MESParamMulPropsHideFilter)this.forColumnNameNotEqualTo("L_MakePhaseHidden", value);
+        return (MESParamMulPropsHideFilter)this.forColumnNameNotEqualTo("AD_MakePhaseHidden", value);
     }
 }

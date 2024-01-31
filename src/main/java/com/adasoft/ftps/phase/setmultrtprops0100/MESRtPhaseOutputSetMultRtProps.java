@@ -15,21 +15,21 @@ import java.util.List;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class MESRtPhaseOutputSetMultRtProps extends MESRtPhaseOutput implements IMESRtPhaseOutput {
-    protected static final String ATDEFINITION_NAME = "L_PhOutSetMultRtProps0100";
+    protected static final String ATDEFINITION_NAME = "AD_PhOutSetMultRtProps0100";
     public static final String PROP_NAME_EQUIPMENTENTITY = "equipmentEntity";
-    public static final String DB_COL_NAME_EQUIPMENTENTITY = "L_EquipmentEntity_64";
-    public static final String COL_NAME_EQUIPMENTENTITY = "L_EquipmentEntity";
+    public static final String DB_COAD_NAME_EQUIPMENTENTITY = "AD_EquipmentEntity_64";
+    public static final String COAD_NAME_EQUIPMENTENTITY = "AD_EquipmentEntity";
     public static final String PROP_NAME_EXCEPTIONRECORDED = "exceptionRecorded";
-    public static final String DB_COL_NAME_EXCEPTIONRECORDED = "L_ExceptionRecorded_Y";
-    public static final String COL_NAME_EXCEPTIONRECORDED = "L_ExceptionRecorded";
+    public static final String DB_COAD_NAME_EXCEPTIONRECORDED = "AD_ExceptionRecorded_Y";
+    public static final String COAD_NAME_EXCEPTIONRECORDED = "AD_ExceptionRecorded";
     public static final String PROP_NAME_VALUES = "values";
-    public static final String DB_COL_NAME_VALUES = "L_Values_B";
-    public static final String COL_NAME_VALUES = "L_Values";
-    private final MESATObjectReferenceFieldHandler<IMESS88Equipment> refEquipmentEntity = MESATObjectReferenceFieldHandler.createReferenceFieldHandler(this, IMESS88Equipment.class, "L_EquipmentEntity");
+    public static final String DB_COAD_NAME_VALUES = "AD_Values_B";
+    public static final String COAD_NAME_VALUES = "AD_Values";
+    private final MESATObjectReferenceFieldHandler<IMESS88Equipment> refEquipmentEntity = MESATObjectReferenceFieldHandler.createReferenceFieldHandler(this, IMESS88Equipment.class, "AD_EquipmentEntity");
     private static final List<IBuildingBlockOutputDescriptor> OUTPUT_DESCRIPTORS = new ArrayList();
 
     public String getATDefinitionName() {
-        return "L_PhOutSetMultRtProps0100";
+        return "AD_PhOutSetMultRtProps0100";
     }
 
     public MESRtPhaseOutputSetMultRtProps(long key) {
@@ -61,22 +61,22 @@ public class MESRtPhaseOutputSetMultRtProps extends MESRtPhaseOutput implements 
     }
 
     public Boolean getExceptionRecorded() {
-        return (Boolean)this.dgtATRow.getValue("L_ExceptionRecorded");
+        return (Boolean)this.dgtATRow.getValue("AD_ExceptionRecorded");
     }
 
     public void setExceptionRecorded(Boolean value) {
         Boolean oldValue = this.getExceptionRecorded();
-        this.dgtATRow.setValue("L_ExceptionRecorded", value);
+        this.dgtATRow.setValue("AD_ExceptionRecorded", value);
         this.pcs.firePropertyChange("exceptionRecorded", oldValue, value);
     }
 
     public byte[] getValues() {
-        return (byte[])((byte[])this.dgtATRow.getValue("L_Values"));
+        return (byte[])((byte[])this.dgtATRow.getValue("AD_Values"));
     }
 
     public void setValues(byte[] value) {
         byte[] oldValue = this.getValues();
-        this.dgtATRow.setValue("L_Values", value);
+        this.dgtATRow.setValue("AD_Values", value);
         this.pcs.firePropertyChange("values", oldValue, value);
     }
 

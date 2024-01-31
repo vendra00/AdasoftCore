@@ -11,10 +11,10 @@ import java.util.List;
 
 public class MESParamDatTimePropDefFilter extends ATRowFilter {
     private static final long serialVersionUID = 1L;
-    protected static final String ATDEFINITION_NAME = "L_ParamDatTimePropDef0100";
+    protected static final String ATDEFINITION_NAME = "AD_ParamDatTimePropDef0100";
 
     public MESParamDatTimePropDefFilter(Server server) {
-        super(server, "L_ParamDatTimePropDef0100");
+        super(server, "AD_ParamDatTimePropDef0100");
     }
 
     public MESParamDatTimePropDefFilter() {
@@ -26,90 +26,90 @@ public class MESParamDatTimePropDefFilter extends ATRowFilter {
     }
 
     public MESParamDatTimePropDefFilter forDateFormatEqualTo(Long value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("L_DateFormat", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("AD_DateFormat", value);
     }
 
     public MESParamDatTimePropDefFilter forDateFormatNotEqualTo(Long value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("L_DateFormat", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("AD_DateFormat", value);
     }
 
     public MESParamDatTimePropDefFilter forDateFormatGreaterThanOrEqualTo(Long value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameGreaterThanOrEqualTo("L_DateFormat", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameGreaterThanOrEqualTo("AD_DateFormat", value);
     }
 
     public MESParamDatTimePropDefFilter forDateFormatLessThan(Long value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameLessThan("L_DateFormat", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameLessThan("AD_DateFormat", value);
     }
 
     public MESParamDatTimePropDefFilter forDefaultValueEqualTo(Time value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("L_DefaultValue", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("AD_DefaultValue", value);
     }
 
     public MESParamDatTimePropDefFilter forDefaultValueNotEqualTo(Time value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("L_DefaultValue", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("AD_DefaultValue", value);
     }
 
     public MESParamDatTimePropDefFilter forDefaultValueGreaterThanOrEqualTo(Time value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameGreaterThanOrEqualTo("L_DefaultValue", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameGreaterThanOrEqualTo("AD_DefaultValue", value);
     }
 
     public MESParamDatTimePropDefFilter forDefaultValueLessThan(Time value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameLessThan("L_DefaultValue", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameLessThan("AD_DefaultValue", value);
     }
 
     public MESParamDatTimePropDefFilter forHLimitEqualTo(MESDuration value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("L_HLimit", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("AD_HLimit", value);
     }
 
     public MESParamDatTimePropDefFilter forHLimitNotEqualTo(MESDuration value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("L_HLimit", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("AD_HLimit", value);
     }
 
     public MESParamDatTimePropDefFilter forLLimitEqualTo(MESDuration value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("L_LLimit", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("AD_LLimit", value);
     }
 
     public MESParamDatTimePropDefFilter forLLimitNotEqualTo(MESDuration value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("L_LLimit", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("AD_LLimit", value);
     }
 
     public MESParamDatTimePropDefFilter forPropertyEqualTo(String value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("L_property", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("AD_property", value);
     }
 
     public MESParamDatTimePropDefFilter forPropertyNotEqualTo(String value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("L_property", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("AD_property", value);
     }
 
     public MESParamDatTimePropDefFilter forPropertyContaining(String value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameContaining("L_property", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameContaining("AD_property", value);
     }
 
     public MESParamDatTimePropDefFilter forPropertyStartingWith(String value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameStartingWith("L_property", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameStartingWith("AD_property", value);
     }
 
     public MESParamDatTimePropDefFilter forReferenceValueEqualTo(Time value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("L_ReferenceValue", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("AD_ReferenceValue", value);
     }
 
     public MESParamDatTimePropDefFilter forReferenceValueNotEqualTo(Time value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("L_ReferenceValue", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("AD_ReferenceValue", value);
     }
 
     public MESParamDatTimePropDefFilter forReferenceValueGreaterThanOrEqualTo(Time value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameGreaterThanOrEqualTo("L_ReferenceValue", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameGreaterThanOrEqualTo("AD_ReferenceValue", value);
     }
 
     public MESParamDatTimePropDefFilter forReferenceValueLessThan(Time value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameLessThan("L_ReferenceValue", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameLessThan("AD_ReferenceValue", value);
     }
 
     public MESParamDatTimePropDefFilter forValueEditableEqualTo(Boolean value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("L_ValueEditable", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameEqualTo("AD_ValueEditable", value);
     }
 
     public MESParamDatTimePropDefFilter forValueEditableNotEqualTo(Boolean value) throws DatasweepException {
-        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("L_ValueEditable", value);
+        return (MESParamDatTimePropDefFilter)this.forColumnNameNotEqualTo("AD_ValueEditable", value);
     }
 }

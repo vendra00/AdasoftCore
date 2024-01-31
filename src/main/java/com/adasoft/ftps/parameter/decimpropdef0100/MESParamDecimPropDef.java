@@ -13,31 +13,31 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class MESParamDecimPropDef extends BulkSaveableMESATObject implements IMESProcessParameterData {
-    protected static final String ATDEFINITION_NAME = "L_ParamDecimPropDef0100";
+    protected static final String ATDEFINITION_NAME = "AD_ParamDecimPropDef0100";
     public static final String PROP_NAME_DEFAULTVALUE = "defaultValue";
-    public static final String DB_COL_NAME_DEFAULTVALUE = "L_DefaultValue_V";
-    public static final String COL_NAME_DEFAULTVALUE = "L_DefaultValue";
+    public static final String DB_COAD_NAME_DEFAULTVALUE = "AD_DefaultValue_V";
+    public static final String COAD_NAME_DEFAULTVALUE = "AD_DefaultValue";
     public static final String PROP_NAME_FRACTIONALPLACES = "fractionalPlaces";
-    public static final String DB_COL_NAME_FRACTIONALPLACES = "L_FractionalPlaces_I";
-    public static final String COL_NAME_FRACTIONALPLACES = "L_FractionalPlaces";
+    public static final String DB_COAD_NAME_FRACTIONALPLACES = "AD_FractionalPlaces_I";
+    public static final String COAD_NAME_FRACTIONALPLACES = "AD_FractionalPlaces";
     public static final String PROP_NAME_INTEGRALPLACES = "integralPlaces";
-    public static final String DB_COL_NAME_INTEGRALPLACES = "L_IntegralPlaces_I";
-    public static final String COL_NAME_INTEGRALPLACES = "L_IntegralPlaces";
+    public static final String DB_COAD_NAME_INTEGRALPLACES = "AD_IntegralPlaces_I";
+    public static final String COAD_NAME_INTEGRALPLACES = "AD_IntegralPlaces";
     public static final String PROP_NAME_LOWERLIMIT = "lowerLimit";
-    public static final String DB_COL_NAME_LOWERLIMIT = "L_LowerLimit_V";
-    public static final String COL_NAME_LOWERLIMIT = "L_LowerLimit";
+    public static final String DB_COAD_NAME_LOWERLIMIT = "AD_LowerLimit_V";
+    public static final String COAD_NAME_LOWERLIMIT = "AD_LowerLimit";
     public static final String PROP_NAME_PROPERTY = "property";
-    public static final String DB_COL_NAME_PROPERTY = "L_property_S";
-    public static final String COL_NAME_PROPERTY = "L_property";
+    public static final String DB_COAD_NAME_PROPERTY = "AD_property_S";
+    public static final String COAD_NAME_PROPERTY = "AD_property";
     public static final String PROP_NAME_UPPERLIMIT = "upperLimit";
-    public static final String DB_COL_NAME_UPPERLIMIT = "L_UpperLimit_V";
-    public static final String COL_NAME_UPPERLIMIT = "L_UpperLimit";
+    public static final String DB_COAD_NAME_UPPERLIMIT = "AD_UpperLimit_V";
+    public static final String COAD_NAME_UPPERLIMIT = "AD_UpperLimit";
     public static final String PROP_NAME_VALUEEDITABLE = "valueEditable";
-    public static final String DB_COL_NAME_VALUEEDITABLE = "L_ValueEditable_Y";
-    public static final String COL_NAME_VALUEEDITABLE = "L_ValueEditable";
+    public static final String DB_COAD_NAME_VALUEEDITABLE = "AD_ValueEditable_Y";
+    public static final String COAD_NAME_VALUEEDITABLE = "AD_ValueEditable";
 
     public String getATDefinitionName() {
-        return "L_ParamDecimPropDef0100";
+        return "AD_ParamDecimPropDef0100";
     }
 
     public MESParamDecimPropDef(long key) {
@@ -60,78 +60,78 @@ public class MESParamDecimPropDef extends BulkSaveableMESATObject implements IME
     }
 
     public BigDecimal getDefaultValue() {
-        MeasuredValue mv = (MeasuredValue)this.dgtATRow.getValue("L_DefaultValue");
+        MeasuredValue mv = (MeasuredValue)this.dgtATRow.getValue("AD_DefaultValue");
         return mv == null ? null : mv.getValue();
     }
 
     public void setDefaultValue(BigDecimal value) {
         BigDecimal oldValue = this.getDefaultValue();
         MeasuredValue mv = value == null ? null : MeasuredValueUtilities.createMV(value, "");
-        this.dgtATRow.setValue("L_DefaultValue", mv);
+        this.dgtATRow.setValue("AD_DefaultValue", mv);
         this.pcs.firePropertyChange("defaultValue", oldValue, value);
     }
 
     public Long getFractionalPlaces() {
-        return (Long)this.dgtATRow.getValue("L_FractionalPlaces");
+        return (Long)this.dgtATRow.getValue("AD_FractionalPlaces");
     }
 
     public void setFractionalPlaces(Long value) {
         Long oldValue = this.getFractionalPlaces();
-        this.dgtATRow.setValue("L_FractionalPlaces", value);
+        this.dgtATRow.setValue("AD_FractionalPlaces", value);
         this.pcs.firePropertyChange("fractionalPlaces", oldValue, value);
     }
 
     public Long getIntegralPlaces() {
-        return (Long)this.dgtATRow.getValue("L_IntegralPlaces");
+        return (Long)this.dgtATRow.getValue("AD_IntegralPlaces");
     }
 
     public void setIntegralPlaces(Long value) {
         Long oldValue = this.getIntegralPlaces();
-        this.dgtATRow.setValue("L_IntegralPlaces", value);
+        this.dgtATRow.setValue("AD_IntegralPlaces", value);
         this.pcs.firePropertyChange("integralPlaces", oldValue, value);
     }
 
     public BigDecimal getLowerLimit() {
-        MeasuredValue mv = (MeasuredValue)this.dgtATRow.getValue("L_LowerLimit");
+        MeasuredValue mv = (MeasuredValue)this.dgtATRow.getValue("AD_LowerLimit");
         return mv == null ? null : mv.getValue();
     }
 
     public void setLowerLimit(BigDecimal value) {
         BigDecimal oldValue = this.getLowerLimit();
         MeasuredValue mv = value == null ? null : MeasuredValueUtilities.createMV(value, "");
-        this.dgtATRow.setValue("L_LowerLimit", mv);
+        this.dgtATRow.setValue("AD_LowerLimit", mv);
         this.pcs.firePropertyChange("lowerLimit", oldValue, value);
     }
 
     public String getProperty() {
-        return (String)this.dgtATRow.getValue("L_property");
+        return (String)this.dgtATRow.getValue("AD_property");
     }
 
     public void setProperty(String value) {
         String oldValue = this.getProperty();
-        this.dgtATRow.setValue("L_property", value);
+        this.dgtATRow.setValue("AD_property", value);
         this.pcs.firePropertyChange("property", oldValue, value);
     }
 
     public BigDecimal getUpperLimit() {
-        MeasuredValue mv = (MeasuredValue)this.dgtATRow.getValue("L_UpperLimit");
+        MeasuredValue mv = (MeasuredValue)this.dgtATRow.getValue("AD_UpperLimit");
         return mv == null ? null : mv.getValue();
     }
 
     public void setUpperLimit(BigDecimal value) {
         BigDecimal oldValue = this.getUpperLimit();
         MeasuredValue mv = value == null ? null : MeasuredValueUtilities.createMV(value, "");
-        this.dgtATRow.setValue("L_UpperLimit", mv);
+        this.dgtATRow.setValue("AD_UpperLimit", mv);
         this.pcs.firePropertyChange("upperLimit", oldValue, value);
     }
 
     public Boolean getValueEditable() {
-        return (Boolean)this.dgtATRow.getValue("L_ValueEditable");
+        return (Boolean)this.dgtATRow.getValue("AD_ValueEditable");
     }
 
     public void setValueEditable(Boolean value) {
         Boolean oldValue = this.getValueEditable();
-        this.dgtATRow.setValue("L_ValueEditable", value);
+        this.dgtATRow.setValue("AD_ValueEditable", value);
         this.pcs.firePropertyChange("valueEditable", oldValue, value);
     }
 

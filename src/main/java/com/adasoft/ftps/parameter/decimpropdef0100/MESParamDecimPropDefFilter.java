@@ -12,10 +12,10 @@ import java.util.List;
 
 public class MESParamDecimPropDefFilter extends ATRowFilter {
     private static final long serialVersionUID = 1L;
-    protected static final String ATDEFINITION_NAME = "L_ParamDecimPropDef0100";
+    protected static final String ATDEFINITION_NAME = "AD_ParamDecimPropDef0100";
 
     public MESParamDecimPropDefFilter(Server server) {
-        super(server, "L_ParamDecimPropDef0100");
+        super(server, "AD_ParamDecimPropDef0100");
     }
 
     public MESParamDecimPropDefFilter() {
@@ -28,87 +28,87 @@ public class MESParamDecimPropDefFilter extends ATRowFilter {
 
     public MESParamDecimPropDefFilter forDefaultValueEqualTo(BigDecimal value) throws DatasweepException {
         MeasuredValue mv = value == null ? null : MeasuredValueUtilities.createMV(value, "");
-        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("L_DefaultValue", mv);
+        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("AD_DefaultValue", mv);
     }
 
     public MESParamDecimPropDefFilter forDefaultValueNotEqualTo(BigDecimal value) throws DatasweepException {
         MeasuredValue mv = value == null ? null : MeasuredValueUtilities.createMV(value, "");
-        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("L_DefaultValue", mv);
+        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("AD_DefaultValue", mv);
     }
 
     public MESParamDecimPropDefFilter forFractionalPlacesEqualTo(Long value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("L_FractionalPlaces", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("AD_FractionalPlaces", value);
     }
 
     public MESParamDecimPropDefFilter forFractionalPlacesNotEqualTo(Long value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("L_FractionalPlaces", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("AD_FractionalPlaces", value);
     }
 
     public MESParamDecimPropDefFilter forFractionalPlacesGreaterThanOrEqualTo(Long value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameGreaterThanOrEqualTo("L_FractionalPlaces", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameGreaterThanOrEqualTo("AD_FractionalPlaces", value);
     }
 
     public MESParamDecimPropDefFilter forFractionalPlacesLessThan(Long value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameLessThan("L_FractionalPlaces", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameLessThan("AD_FractionalPlaces", value);
     }
 
     public MESParamDecimPropDefFilter forIntegralPlacesEqualTo(Long value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("L_IntegralPlaces", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("AD_IntegralPlaces", value);
     }
 
     public MESParamDecimPropDefFilter forIntegralPlacesNotEqualTo(Long value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("L_IntegralPlaces", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("AD_IntegralPlaces", value);
     }
 
     public MESParamDecimPropDefFilter forIntegralPlacesGreaterThanOrEqualTo(Long value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameGreaterThanOrEqualTo("L_IntegralPlaces", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameGreaterThanOrEqualTo("AD_IntegralPlaces", value);
     }
 
     public MESParamDecimPropDefFilter forIntegralPlacesLessThan(Long value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameLessThan("L_IntegralPlaces", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameLessThan("AD_IntegralPlaces", value);
     }
 
     public MESParamDecimPropDefFilter forLowerLimitEqualTo(BigDecimal value) throws DatasweepException {
         MeasuredValue mv = value == null ? null : MeasuredValueUtilities.createMV(value, "");
-        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("L_LowerLimit", mv);
+        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("AD_LowerLimit", mv);
     }
 
     public MESParamDecimPropDefFilter forLowerLimitNotEqualTo(BigDecimal value) throws DatasweepException {
         MeasuredValue mv = value == null ? null : MeasuredValueUtilities.createMV(value, "");
-        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("L_LowerLimit", mv);
+        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("AD_LowerLimit", mv);
     }
 
     public MESParamDecimPropDefFilter forPropertyEqualTo(String value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("L_property", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("AD_property", value);
     }
 
     public MESParamDecimPropDefFilter forPropertyNotEqualTo(String value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("L_property", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("AD_property", value);
     }
 
     public MESParamDecimPropDefFilter forPropertyContaining(String value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameContaining("L_property", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameContaining("AD_property", value);
     }
 
     public MESParamDecimPropDefFilter forPropertyStartingWith(String value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameStartingWith("L_property", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameStartingWith("AD_property", value);
     }
 
     public MESParamDecimPropDefFilter forUpperLimitEqualTo(BigDecimal value) throws DatasweepException {
         MeasuredValue mv = value == null ? null : MeasuredValueUtilities.createMV(value, "");
-        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("L_UpperLimit", mv);
+        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("AD_UpperLimit", mv);
     }
 
     public MESParamDecimPropDefFilter forUpperLimitNotEqualTo(BigDecimal value) throws DatasweepException {
         MeasuredValue mv = value == null ? null : MeasuredValueUtilities.createMV(value, "");
-        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("L_UpperLimit", mv);
+        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("AD_UpperLimit", mv);
     }
 
     public MESParamDecimPropDefFilter forValueEditableEqualTo(Boolean value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("L_ValueEditable", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameEqualTo("AD_ValueEditable", value);
     }
 
     public MESParamDecimPropDefFilter forValueEditableNotEqualTo(Boolean value) throws DatasweepException {
-        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("L_ValueEditable", value);
+        return (MESParamDecimPropDefFilter)this.forColumnNameNotEqualTo("AD_ValueEditable", value);
     }
 }
