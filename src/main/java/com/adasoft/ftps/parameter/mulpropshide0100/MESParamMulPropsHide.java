@@ -10,13 +10,13 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class MESParamMulPropsHide extends BulkSaveableMESATObject implements IMESProcessParameterData {
-    protected static final String ATDEFINITION_NAME = "AD_ParamMulPropsHide0100";
+    protected static final String ATDEFINITION_NAME = "AD_ParamMulPropsHide";
     public static final String PROP_NAME_MAKEPHASEHIDDEN = "makePhaseHidden";
     public static final String DB_COAD_NAME_MAKEPHASEHIDDEN = "AD_MakePhaseHidden_Y";
     public static final String COAD_NAME_MAKEPHASEHIDDEN = "AD_MakePhaseHidden";
 
     public String getATDefinitionName() {
-        return "AD_ParamMulPropsHide0100";
+        return "AD_ParamMulPropsHide";
     }
 
     public MESParamMulPropsHide(long key) {
@@ -54,7 +54,7 @@ public class MESParamMulPropsHide extends BulkSaveableMESATObject implements IME
     }
 
     public String getDataAsString() {
-        List<Object> result = new ArrayList();
+        List<Object> result = new ArrayList<>();
         result.add(this.getMakePhaseHidden());
         return StringUtils.join(result, ';');
     }

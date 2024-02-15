@@ -9,10 +9,10 @@ import java.util.List;
 
 public class MESParamMulPropsHideFilter extends ATRowFilter {
     private static final long serialVersionUID = 1L;
-    protected static final String ATDEFINITION_NAME = "AD_ParamMulPropsHide0100";
+    protected static final String ATDEFINITION_NAME = "AD_ParamMulPropsHide";
 
     public MESParamMulPropsHideFilter(Server server) {
-        super(server, "AD_ParamMulPropsHide0100");
+        super(server, "AD_ParamMulPropsHide");
     }
 
     public MESParamMulPropsHideFilter() {
